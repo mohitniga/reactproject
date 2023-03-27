@@ -1,14 +1,13 @@
-import React, { Component } from 'react'
-import Home from '../../ducat1230/src/Home'
+import React from 'react'
+import ReactDOM from 'react-dom/client';
+import Home, { About1 } from './Home';
 
-export class index extends Component {
-  render() {
-    return (
-      <div>
-        
-      </div>
-    )
-  }
-}
 
-export default index
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+<Home/>
+<About1/>
+  </React.StrictMode>
+);
